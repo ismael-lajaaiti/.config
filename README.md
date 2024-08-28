@@ -1,5 +1,5 @@
 
-# `.config` Repository
+# `.config` repository
 
 This repository is dedicated to storing and managing configuration files for various applications and tools.
 It serves as a centralized location to keep all your custom configurations organized and easily accessible.
