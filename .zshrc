@@ -42,6 +42,7 @@ alias ta="tmux a -t" # Attach tmux session.
 alias tls="tmux list-session" # List tmux sessions.
 alias tn="tmux new -s" # Create new tmux session.
 alias wlg="watch -n 1 --color 'git lg --color'"
+alias llt="ll --tree"
 
 # Merge tool.
 gerge() {
