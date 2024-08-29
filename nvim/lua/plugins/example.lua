@@ -184,6 +184,9 @@ return {
     keys = function()
       return {}
     end,
+    config = function()
+      local luasnip = require("luasnip")
+    end,
   },
   -- then: setup supertab in cmp
   {
@@ -191,6 +194,20 @@ return {
     dependencies = {
       "hrsh7th/cmp-emoji",
     },
+
+    config = function()
+      local luasnip = require("luasnip")
+      luasnip.config.set_config({
+        history = false,
+        enable_autosnippets = true,
+        store_selection_keys = "<Tab>",
+        region_check_events = "InsertEnter",
+        delete_check_events = "InsertLeave",
+      })
+      local loader = require("luansip.loaders.from_lua")
+      loader.load({ paths = "~/.config/nvim/snippets/" })
+    end,
+
     ---@param opts cmp.ConfigSchema
     opts = function(_, opts)
       local has_words_before = function()
@@ -201,6 +218,16 @@ return {
 
       local luasnip = require("luasnip")
       local cmp = require("cmp")
+
+      luasnip.config.set_config({
+        history = false,
+        enable_autosnippets = true,
+        store_selection_keys = "<Tab>",
+        region_check_events = "InsertEnter",
+        delete_check_events = "InsertLeave",
+      })
+      local loader = require("luansip.loaders.from_lua")
+      loader.load({ paths = "~/.config/nvim/snippets/" })
 
       opts.mapping = vim.tbl_extend("force", opts.mapping, {
         ["<Tab>"] = cmp.mapping(function(fallback)
