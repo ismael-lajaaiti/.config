@@ -4,13 +4,10 @@ return {
     keys = {
       { "<leader>sC", "<cmd>SlimeConfig<cr>", desc = "Configure Slime" },
       { "<leader>sp", "<Plug>SlimeParagraphSend<cr>))", desc = "Send paragraph and move" },
-      { "<leader>sP", "<Plug>SlimeParagraphSend<cr>k", desc = "Send paragraph" },
-      { "<leader>sl", "<Plug>SlimeLineSend<cr>", desc = "Send line and move" },
-      { "<leader>sL", "<Plug>SlimeLineSend<cr>k", desc = "Send line" },
-      { "<leader>sn", "<Plug>SlimeSendCell<cr>", desc = "Send cell" },
+      { "<leader>su", "<Plug>SlimeLineSend<cr>", desc = "Send line and move" },
 
       {
-        "<leader>sr",
+        "<leader>sp",
         "<Plug>SlimeRegionSend<cr>k",
         mode = { "v" },
         desc = "Send region visually selected.",
