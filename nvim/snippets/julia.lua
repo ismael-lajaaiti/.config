@@ -36,4 +36,6 @@ return {
   ),
 
   s({ trig = ";ref", dscr = "Documentation reference", snippetType = "autosnippet" }, fmt("[`{}`](@ref)", { i(1) })),
+
+  s({ trig = ";seed", dscr = "Set seed", snippetType = "autosnippet" }, fmt("Random.seed!({})", { i(1) })),
 }
