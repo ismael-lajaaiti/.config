@@ -43,6 +43,9 @@ alias tls="tmux list-session" # List tmux sessions.
 alias tn="tmux new -s" # Create new tmux session.
 alias wlg="watch -n 1 --color 'git lg --color'"
 alias llt="ll --tree"
+alias cr="cargo run"
+alias cb="cargo build"
+alias ca="cargo add"
 
 # Merge tool.
 gerge() {
@@ -113,3 +116,4 @@ tmuxkillf () {
         }
     done
 }
+export PATH="$HOME/.cargo/bin:$PATH" # Add Rust executables to PATH.

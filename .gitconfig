@@ -6,6 +6,7 @@
 [alias]
 	a = add
 	ap = add -p
+    acm = !git add -A && git commit -m
 	st = status -sb
 	co = checkout
 	cob = checkout -b
@@ -29,7 +30,6 @@
 	unstage = restore --staged
 	last = log -1 HEAD --stat
 	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ / | grep -v ^'alias ' | sort
-	lg2 = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue%an%Creset' --abbrev-commit --branches
 	lg = log --graph --all --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%as%C(reset) - %C(bold green)%ar%C(reset)%C(auto)%d%C(reset)%n''          %C(white)%s%C(reset) %C(dim white)- %an%C(reset)'
     root = rev-parse --show-toplevel
 [diff]
