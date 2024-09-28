@@ -1,0 +1,10 @@
+[window]
+decorations = "None"
+opacity = 0.5
+padding.x = 10
+padding.y = 10
+blur = true
+
+[font]
+normal = {family = "firacode nerd font", style = "Regular"}
+size = 13
