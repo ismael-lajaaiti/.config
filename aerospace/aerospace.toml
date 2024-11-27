@@ -95,7 +95,7 @@ if.app-id = 'org.mozilla.firefox'
 run = "move-node-to-workspace 1"
 
 [[on-window-detected]]
-if.app-id = 'com.googlecode.iterm2'
+if.app-id = 'org.alacritty'
 run = "move-node-to-workspace 2"
 
 [[on-window-detected]]
@@ -107,19 +107,15 @@ if.app-id = 'com.apple.mail'
 run = "move-node-to-workspace 3"
 
 [[on-window-detected]]
-if.app-id = 'md.obsidian'
-run = "move-node-to-workspace 4"
-
-[[on-window-detected]]
 if.app-id = 'org.zotero.zotero'
 run = "move-node-to-workspace 4"
 
 [[on-window-detected]]
-if.app-id = 'com.todoist.mac.Todoist'
-run = "move-node-to-workspace 6"
+if.app-id = 'com.apple.reminders'
+run = "move-node-to-workspace 5"
 
 [[on-window-detected]]
-if.app-id = 'com.spotify.client'
+if.app-id = 'com.apple.iCal'
 run = "move-node-to-workspace 5"
 
 [[on-window-detected]]
@@ -132,7 +128,7 @@ run = "move-node-to-workspace 7"
 
 [[on-window-detected]]
 if.app-id = 'com.microsoft.Word'
-run = "move-node-to-workspace 8"
+run = "move-node-to-workspace 7"
 
 [workspace-to-monitor-force-assignment]
 1 = 'main'
